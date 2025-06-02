@@ -30,8 +30,8 @@ function install() {
   unzip "${tmp_download_dir}/${download_filename}"
   mkdir -p ./bin
   ln -s ../language_server.sh ./bin/elixir-ls
-  ln -s ../debugger.sh ./bin/elixir-ls-debugger
-  cp -fpr * "${install_path}"
+  ln -s ../debug_adapter.sh ./bin/elixir-ls-debugger
+  cp -fpRL * "${install_path}"
 
   popd >/dev/null
   popd >/dev/null
